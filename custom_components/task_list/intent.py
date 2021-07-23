@@ -1,15 +1,15 @@
-"""Intents for the Shopping List integration."""
+"""Intents for the Task List integration."""
 from homeassistant.helpers import intent
 import homeassistant.helpers.config_validation as cv
 
 from . import DOMAIN, EVENT
 
-INTENT_ADD_ITEM = "HassShoppingListAddItem"
-INTENT_LAST_ITEMS = "HassShoppingListLastItems"
+INTENT_ADD_ITEM = "HassTaskListAddItem"
+INTENT_LAST_ITEMS = "HassTaskListLastItems"
 
 
 async def async_setup_intents(hass):
-    """Set up the Shopping List intents."""
+    """Set up the Task List intents."""
     intent.async_register(hass, AddItemIntent())
     intent.async_register(hass, ListTopItemsIntent())
 
@@ -27,7 +27,7 @@ class AddItemIntent(intent.IntentHandler):
         await intent_obj.hass.data[DOMAIN].async_add(item)
 
         response = intent_obj.create_response()
-        response.async_set_speech(f"I've added {item} to your shopping list")
+        response.async_set_speech(f"I've added {item} to your task list")
         intent_obj.hass.bus.async_fire(EVENT)
         return response
 
@@ -44,10 +44,10 @@ class ListTopItemsIntent(intent.IntentHandler):
         response = intent_obj.create_response()
 
         if not items:
-            response.async_set_speech("There are no items on your shopping list")
+            response.async_set_speech("There are no items on your task list")
         else:
             response.async_set_speech(
-                "These are the top {} items on your shopping list: {}".format(
+                "These are the top {} items on your task list: {}".format(
                     min(len(items), 5),
                     ", ".join(itm["name"] for itm in reversed(items)),
                 )

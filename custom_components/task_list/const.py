@@ -1,2 +1,2 @@
-"""All constants related to the shopping list component."""
+"""All constants related to the task list component."""
 DOMAIN = "task_list"
