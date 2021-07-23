@@ -1,6 +1,7 @@
 {
   "domain": "task_list",
   "name": "Task List",
+  "version":"1.0.0",
   "documentation": "https://github.com/slomic-smarthytte/task_list",
   "issue_tracker": "https://github.com/slomic-smarthytte/task_list/issues",
   "dependencies": ["http"],
