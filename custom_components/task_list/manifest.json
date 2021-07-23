@@ -1,9 +1,10 @@
 {
-  "domain": "shopping_list",
-  "name": "Shopping List",
-  "documentation": "https://www.home-assistant.io/integrations/shopping_list",
+  "domain": "task_list",
+  "name": "Task List",
+  "documentation": "https://github.com/slomic-smarthytte/task_list",
+  "issue_tracker": "https://github.com/slomic-smarthytte/task_list/issues",
   "dependencies": ["http"],
-  "codeowners": [],
+  "codeowners": ["ismarslomic"],
   "config_flow": true,
   "quality_scale": "internal",
   "iot_class": "local_push"

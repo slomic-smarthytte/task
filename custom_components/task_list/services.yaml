@@ -1,42 +1,42 @@
 add_item:
   name: Add item
-  description: Add an item to the shopping list.
+  description: Add an item to the task list.
   fields:
     name:
       name: Name
       description: The name of the item to add.
       required: true
-      example: Beer
+      example: Change batteries on motion sensor in bedroom
       selector:
         text:
 
 complete_item:
   name: Complete item
-  description: Mark an item as completed in the shopping list.
+  description: Mark an item as completed in the task list.
   fields:
     name:
       name: Name
       description: The name of the item to mark as completed (without removing).
       required: true
-      example: Beer
+      example: Change batteries on motion sensor in bedroom
       selector:
         text:
 
 incomplete_item:
   name: Incomplete item
-  description: Marks an item as incomplete in the shopping list.
+  description: Marks an item as incomplete in the task list.
   fields:
     name:
       description: The name of the item to mark as incomplete.
-      example: Beer
+      example: Change batteries on motion sensor in bedroom
       required: true
       selector:
         text:
 
 complete_all:
   name: Complete all
-  description: Marks all items as completed in the shopping list. It does not remove the items.
+  description: Marks all items as completed in the task list. It does not remove the items.
 
 incomplete_all:
   name: Incomplete all
-  description: Marks all items as incomplete in the shopping list.
+  description: Marks all items as incomplete in the task list.

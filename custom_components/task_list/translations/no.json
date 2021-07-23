@@ -5,10 +5,10 @@
         },
         "step": {
             "user": {
-                "description": "\u00d8nsker du \u00e5 konfigurere handleliste?",
-                "title": "Handleliste"
+                "description": "\u00d8nsker du \u00e5 konfigurere oppgaveliste?",
+                "title": "Oppgaveliste"
             }
         }
     },
-    "title": "Handleliste"
+    "title": "Oppgaveliste"
 }

@@ -1,7 +1,7 @@
 {
   "name": "Simple Task List integration for Home Assistant",
   "render_readme": true,
-  "domains": ["task_list"],
-  "country": ["NO"],
-  "iot_class": ["Local Push"]
+  "domains": "task_list",
+  "country": "NO",
+  "iot_class": "local_push"
 }
